@@ -3,7 +3,6 @@ const createError = (statusCode, message) => {
     error.status = statusCode;
     return error;
 };
-
 const errorHandling = (err, req, res, next) => {
     const errorStatus = err.status || 500;
     const errorMessage = err.message || "Erro interno do servidor.";
@@ -14,5 +13,4 @@ const errorHandling = (err, req, res, next) => {
         stack: err.stack,
     });
 };
-
 export { createError, errorHandling };

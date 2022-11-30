@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 import GrupoMuscular from "./GrupoMuscular.js";
-
 const { Schema } = mongoose;
 const TipoExercicioSchema = new Schema({
     nome: {
@@ -28,5 +27,4 @@ const TipoExercicioSchema = new Schema({
     },
     grupoMuscular: GrupoMuscular.schema,
 });
-
 export default mongoose.model("TipoExercicio", TipoExercicioSchema);

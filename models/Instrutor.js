@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const { Schema } = mongoose;
 const InstrutorSchema = new Schema(
     {
@@ -36,5 +35,4 @@ const InstrutorSchema = new Schema(
     },
     { timestamps: true }
 );
-
 export default mongoose.model("Instrutor", InstrutorSchema);
